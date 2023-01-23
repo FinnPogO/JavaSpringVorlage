@@ -24,6 +24,20 @@
               <a class="nav-link" th:href="@{/personen}">Personen</a>
           </li>
 
+          <li th:if="${activePage == 'Impressum'}" class="nav-item">
+            <a class="nav-link active" th:href="@{/?activePage=impressums}">Impressum</a>
+          </li>
+          <li th:unless="${activePage == 'Impressum'}" class="nav-item">
+              <a class="nav-link" th:href="@{/?activePage=impressum}">Impressum</a>
+          </li>
+
+          <li th:if="${activePage == 'Filme'}" class="nav-item">
+            <a class="nav-link active" th:href="@{/filme}">Filme</a>
+          </li>
+          <li th:unless="${activePage == 'Filme'}" class="nav-item">
+              <a class="nav-link" th:href="@{/filme}">Filme</a>
+          </li>
+
 
         </ul>
       </div>

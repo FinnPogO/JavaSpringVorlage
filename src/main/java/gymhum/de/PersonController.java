@@ -22,6 +22,7 @@ public class PersonController {
         getPersonen().add(new Person("Lisbeth", "Zalander", 21));
         getPersonen().add(new Person("Ulf", "Friedrichs", 22));
         getPersonen().add(new Person("Ulf", "Friedrichs", 22));
+        getPersonen().add(new Person("Thomas", "Meier", 46));
     }
 
     // MAPPINGS
@@ -83,6 +84,8 @@ public class PersonController {
         return "redirect:/personen";
     }
 
+
+    
 
     // Methode zum entfernen einer Person
     public void removePerson(Person person){
