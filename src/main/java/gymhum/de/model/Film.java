@@ -2,35 +2,32 @@ package gymhum.de.model;
 
 public class Film {
     String titel;
-    int fsk;
-    int leange;
+    int FSK;
+    int laenge;
 
-
-
-    public Film(String titel, int fsk, int leange){
-        setFsk(fsk);
-        setLeange(leange);
+    public Film(String titel, int FSK, int laenge){
+        setFSK(FSK);
+        setLaenge(laenge);
         setTitel(titel);
     }
-
-
-    public void setFsk(int fsk) {
-        this.fsk = fsk;
+    public void setFSK(int fSK) {
+        FSK = fSK;
     }
-    public int getFsk() {
-        return fsk;
-    }
-    public void setLeange(int leange) {
-        this.leange = leange;
-    }
-    public int getLeange() {
-        return leange;
+    public void setLaenge(int laenge) {
+        this.laenge = laenge;
     }
     public void setTitel(String titel) {
         this.titel = titel;
     }
+    public int getFSK() {
+        return FSK;
+    }
+    public int getLaenge() {
+        return laenge;
+    }
     public String getTitel() {
         return titel;
     }
+
     
 }
