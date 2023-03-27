@@ -38,6 +38,13 @@
               <a class="nav-link" th:href="@{/filme}">Filme</a>
           </li>
 
+          <li th:if="${activePage == 'Wolle'}" class="nav-item">
+            <a class="nav-link active" th:href="@{/?activePage=Wolle}">Wolle</a>
+          </li>
+          <li th:unless="${activePage == 'Wolle'}" class="nav-item">
+              <a class="nav-link" th:href="@{/?activePage=Wolle}">Wolle</a>
+          </li>
+
 
         </ul>
       </div>

@@ -1,8 +1,4 @@
-/**
- * 
- * Dies ist die Main-JS-Anlaufstelle. Hier startet das Programm. In dieser Datei sollte nichts verändert werden :)
- * 
- */
+
 package gymhum.de;
 
 import java.util.ArrayList;
